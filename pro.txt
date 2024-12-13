@@ -1,1 +1,2 @@
 #1 Project Setup
+#2 Styled Components Setup
