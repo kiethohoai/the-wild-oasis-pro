@@ -2,3 +2,4 @@
 #2 Styled Components Setup
 #3 Reset CSS & Global Styles
 #4 Setting Up Pages and Routes
+$5 App Layout
