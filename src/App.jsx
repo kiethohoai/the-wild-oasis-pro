@@ -10,10 +10,20 @@ import Cabins from './pages/Cabins';
 import Bookings from './pages/Bookings';
 import GlobalStyle from './styles/GlobalStyles';
 import AppLayout from './ui/AppLayout';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
+
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      staleTime: 1000 * 60,
+    },
+  },
+});
 
 function App() {
   return (
-    <>
+    <QueryClientProvider client={queryClient}>
       <GlobalStyle />
       <BrowserRouter>
         <Routes>
@@ -31,7 +41,8 @@ function App() {
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>
-    </>
+      <ReactQueryDevtools initialIsOpen={false} />
+    </QueryClientProvider>
   );
 }
 

@@ -4,3 +4,4 @@
 #4 Setting Up Pages and Routes
 $5 App Layout
 #6 Sidebar & Main Navigation
+#7 Setup React Query
