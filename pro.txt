@@ -6,3 +6,4 @@ $5 App Layout
 #6 Sidebar & Main Navigation
 #7 Setup React Query
 #8 Fetching & Dispalying Cabin Items
+#9 Delete Cabin Feature
